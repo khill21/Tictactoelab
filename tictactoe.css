@@ -1,0 +1,52 @@
+
+#grid{
+  text-align: center;
+  border:5px solid black;
+  height: 90%;
+  width: 55%;
+  border-collapse: collapse;
+  float: left;
+}
+
+#grid td{
+  height: 180px;
+  width: 50px;
+  border: 3px solid black;
+}
+
+#grid td:hover{
+  background-color: azure;
+}
+
+#turns{
+  text-align: center;
+  height: 30px;
+  margin-left: 10%;
+  border-collapse: collapse;
+  float: left;
+
+}
+
+#turns td{
+  height: 30px;
+  width: 30%;
+  border: 2px solid black;
+}
+
+#winningpart{
+  float: right;
+  font-size: 30px;
+  clear: right;
+  padding-right: 25%;
+}
+
+button{
+  display: block;
+  clear: both;
+  padding: 7px 5px;
+}
+
+h1{
+  margin-left: 13%;
+  color: skyblue;
+}

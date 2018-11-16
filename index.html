@@ -1,0 +1,42 @@
+<!Doctype html>
+<html>
+<head>
+  <title>TicTacToe</title>
+  <meta charset ="UTF-8">
+
+    <link rel="stylesheet" href="tictactoe.css">
+</head>
+  <body>
+    <h1>Want to Play Tic Tac Toe?</h1>
+<table id = "grid">
+  <tr>
+    <td class="boxes" id="box1" onclick="insertx(this)"></td>
+    <td class="boxes" id="box2" onclick="insertx(this)"></td>
+    <td class="boxes" id="box3" onclick="insertx(this)"></td>
+  </tr>
+  <tr>
+    <td class="boxes" id="box4" onclick="insertx(this)"></td>
+    <td class="boxes" id="box5" onclick="insertx(this)"></td>
+    <td class="boxes" id="box6" onclick="insertx(this)"></td>
+  </tr>
+  <tr>
+    <td class="boxes" id="box7" onclick="insertx(this)"></td>
+    <td class="boxes" id="box8" onclick="insertx(this)"></td>
+    <td class="boxes" id="box9" onclick="insertx(this)" ></td>
+  </tr>
+</table>
+<Table id = turns>
+  <tr>
+    <td> Player X </td>
+    <td> Player O </td>
+  </tr>
+  <tr>
+    <td id = "turncounter1"></td>
+    <td id = "turncounter2"></td>
+  </tr>
+</table>
+<div id="winningpart"></div>
+  <button onclick = "reset()">reset</button>
+  <script src="tictactoe.js"></script>
+</body>
+</html>
