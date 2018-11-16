@@ -13,7 +13,7 @@ var bottomright = document.getElementById('box9');
 
 function insertx(box){
 
-  /*for (var i=0; i<9; i++;){*/
+  /*this is to turn individual boxes into "x" and "o" and to also change the color of the turn counter*/
   if(box.innerHTML==""){
     if(times<9){
         if(xturn){
@@ -38,7 +38,7 @@ function insertx(box){
    winner();
 }
 
-
+/*this is to reset the board after a win, loss or draw*/
 function reset(){
   times=0;
   for (var i=0; i<9; i++){
@@ -50,7 +50,7 @@ function reset(){
   xturn=true;
   document.getElementById("winningpart").innerHTML ="";
 }
-
+/*this is to connect each cell in order to show if there's a winner of the game*/
 function winner(){
 
 if(topleft.innerHTML=="X" && topmiddle.innerHTML=="X" && topright.innerHTML=="X"){
